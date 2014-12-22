@@ -1,0 +1,105 @@
+.fader
+    background: #ece7d1
+    position: fixed
+    text-align: center
+    top: 0
+    left: 0
+    font-size: 20px
+    padding-top: 10%
+    color: #454444
+    width: 100%
+    height: 100%
+    z-index: 9999
+
+.letter
+    width: 830px
+    margin: 0 auto
+    position: relative
+
+    .paper
+        background: #f1e3a5
+        padding: 87px 125px
+        position: relative
+        font-size: 26px
+        color: #454444
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75)
+
+        &:after
+            content: ''
+            display: block
+            width: 100%
+            height: 455px
+            position: absolute
+            bottom: 0
+            left: 0
+            background: #e9d98f
+            border-top: 2px dashed #e1d083
+
+        &__ribbon
+            position: absolute
+            top: -55px
+            left: -69px
+            z-index: 2
+
+        &__content
+            position: relative
+            z-index: 1
+
+            p:last-child
+                padding-bottom: 40px
+
+        h1, p
+            margin-bottom: 30px
+
+        &__icons
+            img
+                height: auto
+                position: absolute
+                z-index: 3
+
+                &:not(.tree)
+                    animation: icon 240s infinite
+
+            .tree
+                top: 250px
+                left: 140px
+
+            .snowman
+                top: -70px
+                left: 710px
+
+            .snowflake
+                top: 190px
+                left: 930px
+
+            .gift
+                top: 190px
+                left: -430px
+
+            .snowflake-small
+                top: -110px
+                left: -290px
+
+            .shoe-left
+                top: 570px
+                left: -330px
+
+            .shoe-right
+                top: 660px
+                left: 1000px
+
+            .bubble
+                top: -140px
+                left: 360px
+
+.envelope-back
+    position: absolute
+    z-index: 0
+    top: 157px
+    left: -58px
+
+.envelope-front
+    position: absolute
+    z-index: 1
+    top: 510px
+    left: -85px

@@ -1,0 +1,37 @@
+html, body
+    height: 100%
+    background: #ece7d1 url(../img/loading-bubbles.svg) center center no-repeat
+    font-family: 'XiomaraRegular', cursive
+
+    *
+        user-select: none
+        cursor: default
+
+.main-wrapper
+    min-width: $layout-min-width
+    max-width: $layout-max-width
+    margin: 0 auto
+    min-height: 100%
+    height: auto !important
+    height: 100%
+    overflow: hidden
+    opacity: 0
+    transform: scale(0.98)
+    transition: transform 1s, opacity 1s
+
+    &.active
+        opacity: 1
+        transform: scale(1)
+
+.header
+    height: $header-height
+
+.content
+    padding: 0 0 $footer-height
+
+.footer
+    margin: -$footer-height auto 0
+    min-width: $layout-min-width
+    max-width: $layout-max-width
+    height: $footer-height
+    position: relative

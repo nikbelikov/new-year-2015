@@ -1,0 +1,1 @@
+(function(){$(window).load(function(){return $(".main-wrapper").addClass("active"),$(".fader").hide()})}).call(this);
